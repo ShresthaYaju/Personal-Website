@@ -34,9 +34,20 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    
+    position: fixed;
+    padding-left: 50%;
 }
+
+
+
+/* nav{
+    display: fixed;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 60%;
+    
+} */
 
 .icon{
     width: 100px;
@@ -72,9 +83,9 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 15%;
+    margin-top: 23%;
     font-size: 45px;
-    margin-left: 10%;
+    margin-left: 15%;
     font-weight: bold;
     color: white;
    
@@ -119,6 +130,7 @@ nav ul li a:hover::after{
     font-weight: bold;
     word-spacing: 3px;
     margin-top: 20px;
+    line-height: 140%;
 }
 
 .personal-links{
@@ -134,6 +146,10 @@ nav ul li a:hover::after{
     font-size: 45px;
     color:#2a383f ;
 
+}
+
+.personal-links a{
+    color: #2a383f;
 }
 
 .personal-links a:visited{
@@ -443,6 +459,7 @@ nav ul li a:hover::after{
     margin-right: 15px;
     display: inline-block;
     transition: transform 0.5s;
+    color: white;
 }
 
 .social-icons a:visited{
@@ -513,11 +530,126 @@ form btn2{
 
 }
 
+nav .fas{
+    display: none;
+}
 
 
 
 /* ---------------media query----------------- */
 
-@media only screen and(max-width:600px){
+@media only screen  and (max-width:600px){
+   #header{
+    background-image: url(images/Phone1.png);
+    background-size: cover;
+    background-position: center;
+   }
 
+   .header-text{
+    margin-top: 145%;
+    font-size: 40px;
+    margin-left: -5px;
+    text-align: center;
+   }
+
+   .header-text h1{
+    font-size: 60px;
+   }
+
+   nav .fas{
+    display: block;
+    font-size: 35px;
+   }
+   nav ul{
+    background-color: #CE7777;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top:50px ;
+    z-index: 2;
+    transition: right 0.5s;
+   }
+
+   nav ul li{
+    display: block;
+    margin: 25px;
+
+   }
+
+   nav ul .fas{
+    position: absolute;
+    top:25px;
+    left:25px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+
+   #about{
+    background-image: url(images/phone2.png);
+    background-position: center;
+    background-size: cover;
+   }
+
+   #about .row h1{
+    font-size: 30px; 
+    color: #2a383f;
+    margin-bottom: -10px;
+    }
+
+    #about .row p{
+    font-size: 18px;
+    word-spacing: 3px;
+    margin-top: 20px;
+    line-height: 120%;
+    }
+
+    #about .row{
+        padding: 40px;
+        padding-right: -5px;
+        padding-top: 120%;
+        text-align: center;
+    }
+
+    #about ul{
+        justify-content: center;
+    }
+
+    #skill{
+        background-image: url(images/phone3.png);
+    }
+    
+    #skill .skill-header{
+        margin-top: 40%;
+        text-align: center;
+    }
+    .skill-header h1{
+        font-size: 40px;
+
+    }
+
+    .skill-main{
+        width: 100%;
+    }
+    #portfolio {
+        height: 190vh;
+        text-align: center;
+    }
+
+    #contact{
+        height: 120vh;
+
+    }
+    #contact .row{
+        display: block;
+    }
+
+    #contact .btn1{
+        background-color: #CE7777;
+    }
+
+    #contact .contact-right{
+        margin-top: 35px;
+    }
 }
