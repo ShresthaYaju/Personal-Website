@@ -36,6 +36,7 @@ nav{
     flex-wrap: wrap;
     position: fixed;
     padding-left: 50%;
+    z-index: 10;
 }
 
 
@@ -417,6 +418,11 @@ nav ul li a:hover::after{
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     background-color: #2a383f;
+    
+}
+
+#contact p{
+    color: white;
 }
 
 #contact .row{
@@ -638,7 +644,7 @@ nav .fas{
     }
 
     #contact{
-        height: 120vh;
+        height: 140vh;
 
     }
     #contact .row{
